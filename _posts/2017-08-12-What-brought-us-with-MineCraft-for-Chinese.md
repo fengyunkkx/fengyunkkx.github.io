@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "MineCraft 的中国版正式公测，为我们带来了哪些？"
-subtitle:   "What brought us with MineCraft for Chinese "
+subtitle:   "What brought us with MineCraft for Chinese"
 date:       2017-08-12 12:00:00
 author:     "沨沄极客"
 header-img: "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
@@ -9,6 +9,7 @@ header-mask: 0.3
 catalog:    true
 tags:
     - 游戏
+    - 正版
 ---
 
 # MineCraft 的中国版正式公测，为我们带来了哪些？

@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      "这里是沨沄写博客的地方"
+subtitle:   "日志模板"
+date:       2017-07-12 12:00:00
+author:     "沨沄极客"
+header-img: "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
+header-mask: 0.3
+catalog:    true
+tags:
+    - 简介
+---
+
 # 这里是沨沄写博客的地方
 
 ## 首先要欢迎你来到这里

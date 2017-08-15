@@ -1,19 +1,19 @@
 # Site settings
-title: FoxGeeker Blog
+title: 沨沄的博客
 SEOTitle: 沨沄的博客 | FoxGeeker Blog
 header-img: img/home-bg.jpg
 email: fengyunkkx@qq.com
 description: "探索和折腾 | 沨沄，Designer | @FoxGeeker 的个人博客。"
 keyword: "沨沄极客, fengyunkkx, 沨沄, FoxGeeker, Fox, @fengyunkkx, 沨沄的博客, FoxGeeker Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品"
-url: "https://huangxuan.me"              # your host, for absolute URL
+url: "http://ifoxfactory.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     fengyunkkx
-zhihu_username:     fengyunkkx
+weibo_username:     FoxGeeker
+zhihu_username:     zhang-yan-lin-52
 github_username:    fengyunkkx
 twitter_username:   fengyunkkx
 #facebook_username:  fengyunkkx
@@ -92,8 +92,5 @@ friends: [
     # },{
         title: "少数派",
         href: "https://www.sspai.com/"
-    },{
-        title: "New",
-        href: "google.com"
     },
 ]
