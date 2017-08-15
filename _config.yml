@@ -60,7 +60,7 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_track_id: 'UA-104621299-1'            # Format: UA-xxxxxx-xx
 ga_domain: ifoxfactory.com
 
 
@@ -68,7 +68,7 @@ ga_domain: ifoxfactory.com
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "善于折腾"
-sidebar-avatar: /img/avatar-fox.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-ifox.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

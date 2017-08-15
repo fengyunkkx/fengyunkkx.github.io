@@ -3,7 +3,7 @@ layout:     post
 title:      "这里是沨沄写博客的地方"
 date:       2017-07-12 12:00:00
 author:     "沨沄极客"
-header-img: "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
+header-img: "img/in-post/2017-07-12-the-first-journal/title-pic.jpg"
 header-mask: 0.3
 catalog:    true
 tags:

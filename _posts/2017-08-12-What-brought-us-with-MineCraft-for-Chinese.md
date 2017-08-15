@@ -2,9 +2,9 @@
 layout:     post
 title:      "MineCraft 的中国版正式公测，为我们带来了哪些？"
 subtitle:   "What brought us with MineCraft for Chinese"
-date:       2017-08-12 12:00:00
+date:       2017-08-12 16:42:23
 author:     "沨沄极客"
-header-img: "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
+header-img: "img/in-post/2017-08-12-What-brought-us-with-MineCraft-for-Chinese/title-pic.jpg"
 header-mask: 0.3
 catalog:    true
 tags:
@@ -145,10 +145,10 @@ MineCraft 是一款在全球范围大受欢迎的沙盒类游戏，在国内也�
 
 你可以在 [中国版官网](http://mc.163.com/) 免费下载中国版 MineCraft。
 
-
-
 ---
 
 * MineCraft 的 C++ 版本包括 UWP 版和 PE 版，优点是便于普通玩家安装和游玩，可惜无法使用 MOD，缺乏可扩展性。
 
 * MineCraft 的 JAVA 版本是目前最受 MineCraft 爱好者喜爱的版本，也是可扩展程度最高的版本。此版本的运行依赖于 JAVA 环境，对不熟悉游戏的玩家有一定的门槛。
+
+本文首发于 [少数派](sspai.com)。
