@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      "这里是沨沄写博客的地方"
-subtitle:   "日志模板"
 date:       2017-07-12 12:00:00
 author:     "沨沄极客"
 header-img: "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
@@ -67,9 +66,9 @@ tags:
 
 爱折腾，爱钻研，想不断进步。
 
-擅长 Photoshop、illustrator、前端，还在学 Python，视频制作与剪辑。
+擅长 Photoshop、illustrator、前端、视频制作与剪辑，还在学 Python。
 
-平时喜欢逛逛 V2EX、少数派这些网站，同时也是少数派（Sspai.com）的一位签约作者。
+平时喜欢逛逛 V2EX、少数派这些网站，同时也是 [少数派](Sspai.com) 的一位签约作者。
 
 喜爱探索各类软件，熟悉 iOS、Android，对刷机、Root、越狱等均有研究。熟悉 Windows、macOS。对于科技、互联网有着长期的关注。
 
