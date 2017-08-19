@@ -199,7 +199,7 @@ Atom 就会在你保存 md 文件的同时，**自动生成一个 HTML 文件**�
 
 其实在 Atom 上还有许多优秀的个性化插件，也不乏 [Activate-power-mode](https://atom.io/packages/activate-power-mode) 这种非常有个性的插件。如果你熟悉 Github，你还可以将 Github 作为云存储的方案。
 
-![Activate-power-mode](08-Activate-power-mode.gif)
+![08-activate-power-mode](https://i.loli.net/2017/08/18/5996fc6039550.gif)
 
 
 以上这些改进满足了我对 Markdown 编辑器的绝大部分要求。到这里，一个由 Atom 改造的 Markdown 编辑器就已经完成了。
