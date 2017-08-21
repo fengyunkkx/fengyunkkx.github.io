@@ -1,6 +1,7 @@
 ---
 layout:     post
-title:      "这里是沨沄写博客的地方"
+title:      "欢迎来到沨沄写博客的地方"
+subtitle:   "Welcome my blog"
 date:       2017-07-12 12:00:00
 author:     "沨沄极客"
 header-img: "img/in-post/2017-07-12-the-first-journal/title-pic.jpg"
@@ -10,7 +11,7 @@ tags:
     - 简介
 ---
 
-# 这里是沨沄写博客的地方
+# 欢迎来到沨沄写博客的地方
 
 ## 首先要欢迎你来到这里
 

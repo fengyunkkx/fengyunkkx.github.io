@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "利用 Atom 为自己打造一个专属 Markdown 编辑器"
-date:       2017-08-17 21:16:5
+title:      "用 Atom，在 Windows 上定制属于自己的 Markdown 编辑器"
+date:       2017-08-17 21:16:05
 author:     "沨沄极客"
 header-img: "img/in-post/2017-08-17-Atom-with-Markdown/title-pic.png"
 header-mask: 0.3
@@ -12,7 +12,7 @@ tags:
     - 编辑器
 ---
 
-# 利用 Atom 为自己打造一个专属 Markdown 编辑器
+# 用 Atom，在 Windows 上定制属于自己的 Markdown 编辑器
 
 我一直在 Windows 上寻找一款足够媲美 MWeb 和 Ulysses 的 Markdown 编辑器。可惜 Windows 上优秀的编辑器较少，于是我盯上了这款本为程序员设计的 Atom 编辑器。
 
@@ -205,3 +205,5 @@ Atom 就会在你保存 md 文件的同时，**自动生成一个 HTML 文件**�
 以上这些改进满足了我对 Markdown 编辑器的绝大部分要求。到这里，一个由 Atom 改造的 Markdown 编辑器就已经完成了。
 
 Enjoy it !
+
+本文由我撰写，首发于 [少数派](https://sspai.com/post/40460)。

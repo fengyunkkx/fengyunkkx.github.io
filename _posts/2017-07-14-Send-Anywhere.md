@@ -7,8 +7,8 @@ header-img: "img/in-post/2017-07-14-Send-Anywhere/title-pic.jpg"
 header-mask: 0.3
 catalog:    true
 tags:
-    - Windows
     - 软件
+    - 文件传输
 ---
 
 # 超越局域网，免费多平台的文件分享利器：SendAnywhere

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "MineCraft 的中国版正式公测，为我们带来了哪些？"
+title:      "MineCraft 中国版正式公测，国际版玩家值得回归吗？"
 subtitle:   "What brought us with MineCraft for Chinese"
 date:       2017-08-12 16:42:23
 author:     "沨沄极客"
@@ -12,7 +12,7 @@ tags:
     - 正版
 ---
 
-# MineCraft 的中国版正式公测，为我们带来了哪些？
+# MineCraft 中国版正式公测，国际版玩家值得回归吗？
 
 MineCraft 是一款在全球范围大受欢迎的沙盒类游戏，在国内也有着成千上万的玩家。这次正式进入中国，究竟会为 MineCraft 玩家带来怎样的惊喜呢？
 
