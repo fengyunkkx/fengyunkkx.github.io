@@ -8,7 +8,7 @@ header-mask: 0.3
 catalog:    true
 tags:
     - 想法
-—--
+---
 
 最近很容易被一些事情困扰。
 
