@@ -1,0 +1,1257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>软件下载链接</title>
+
+<style type="text/css">
+html { overflow-y: scroll; }
+html, body, #dropitList { padding: 0; margin: 0; }
+
+#di-container, #di-main-wrap, #di-header, #di-footer-wrap, #dropitList ul#infoline, #di-mainTable { padding: 0; margin: 0; position: relative; }
+
+#dropitList { font: 12px/1.3 Arial, sans-serif; *float: left; }
+
+#di-container { margin: 0 auto; padding: 15px 30px 40px; display: table; }
+#di-header { padding-top: 1px; }
+
+#dropitList textarea, #dropitList input { outline: none; }
+
+#dropitList a { outline: none; color: #333; text-decoration: underline; }
+a#di-top { display: block; margin-top: 30px; display: inline; position: relative; margin-bottom: 30px; text-decoration: none; }
+
+#dropitList h1 { font-size: 220%; margin: 15px 0; }
+
+.di-center { text-align: center; }
+.di-right { text-align: right; }
+
+#di-infoline { padding: 0; margin: 0; margin-bottom: 15px; }
+
+#di-infoline li {
+	border-right: 1px solid #333;
+	display: inline;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+
+#di-infoline li:last-child, #di-infoline .di-last { border: none; }
+
+#di-mainTable { border-bottom: 1px solid #333; margin: 10px 0 25px 0; cursor: default; }
+/* #di-mainTable { table-layout: fixed; overflow: hidden; word-wrap: break-word; } */
+
+#dropitList th, #dropitList td { padding: 6px 8px; vertical-align: top; }
+
+#dropitList th {
+	text-align: left;
+	white-space: nowrap;
+	border-bottom: 1px solid #333;
+	font-weight: normal;
+}
+
+#dropitList th div { *width: 100%; *padding-right: 8px; }
+
+#dropitList thead th div { position: relative; }
+.di-sortable thead th, .di-sortable thead th:hover { cursor: pointer; }
+
+.di-tableSortArrow {
+	position: absolute;
+	right: 0px;
+	*right: 5px;
+	top: 2px;
+	font-size: 9px;
+}
+
+#di-footer span { font-style: italic; }
+
+form.di-filter { position: absolute; top: 15px; right: 0; }
+form.di-filter#di-fixed { position: fixed; top: 30px; right: 30px; _position: absolute; _top: 15px; _right: 0; }
+
+form.di-filter input.di-searchField {
+    width: 120px;
+	height: 16px;
+	border: 1px solid #333;
+    padding: 6px 28px 6px 10px;
+    position: relative;
+}
+
+form.di-filter input.di-clearFilterButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 28px;
+	height: 28px;
+	margin-right: 0;
+	padding-left: 0;
+	text-decoration: none;
+	border: none;
+	background-color: transparent;
+}
+
+form.di-filter input.di-clearFilterButton:hover { cursor: pointer; }
+
+a.di-clearFilterLink {
+    border: none;
+	cursor: pointer;
+	text-decoration: underline;
+	margin-left: 5px;
+}
+
+.di-noResults { padding: 30px 0 50px; }
+
+@charset "UTF-8";
+/*lighter box*/
+
+html, body {
+	height: 100%;
+}
+
+#lighterbox2 {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 2100;
+}
+
+#lighterboxclose2 {
+	width: 100%;
+	height: 100%;
+}
+
+#lighterboxwrapper2, #lighterboxcontent2 {
+	background-color: #fff;
+	z-index: inherit;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	padding: 12px;
+}
+
+#lighterboxwrapper2 {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	min-width: 200px;
+	text-align: center;
+}
+
+#lighterboxcontent2 {
+	/*/background: url(load.gif) no-repeat 50% 50%;*/
+	padding: 12px;
+}
+
+#lighterboxportimage2 {
+	border: solid 10px #fff;
+	cursor: pointer;
+}
+
+#lighterboxtitle2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#lighterboxdescription2 {
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+#lighterboxprevimage2, #lighterboxnextimage2 {
+	position: absolute;
+	top: 38%;
+	padding: 12px 8px 16px;
+}
+
+#lighterboxprevimage2 {
+	left: 0;
+}
+
+#lighterboxnextimage2 {
+	right: 0;
+}
+
+#lighterboxcloseimage2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 6px;
+}
+
+#lighterboxclosebutton2 {
+	color: #000;
+	font: bold 12px verdana, sans-serif;
+	width: 100%;
+}
+
+span#lighterboxcloseimage2 {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#lighterboxclosebutton2 span {
+	cursor: pointer;
+}
+
+/* ---------------------------------------------------------- */
+/* Theme: Casablanca
+/* Author: tpr
+/* based on Casablanca table style by Rodrigo Castilho Galvao Ferreira
+/* ---------------------------------------------------------- */
+
+span.highlighted { color: #000; background-color: #FFA593; }
+
+#dropitList { color: #666666; font-family: "Trebuchet MS", "Verdana", sans-serif; }
+
+#dropitList a { color: #C30; text-decoration: none; font-weight: bold; border-bottom: 1px dotted #E63C1E; }
+#dropitList a:hover { color: #E63C1E; }
+
+#dropitList a#di-top { color: #666; border: none; font-weight: normal; }
+#dropitList a#di-top:hover { color: #333; }
+
+#dropitList h1 { color: #E63C1E; }
+
+#dropitList #di-infoline li { border-right-color: #ccc; }
+
+#dropitList #di-mainTable {
+  border: none;
+  border-top: 30px solid #E63C1E;
+  padding: 0;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+#dropitList td { padding-top: 15px; padding-bottom: 15px; }
+
+#dropitList th {
+	background-color: #C30;
+	font-weight: bold;
+    border: none;
+    color: #FFB3A6;
+	text-transform: uppercase;
+	line-height: 16px;
+}
+
+#dropitList .di-sortable th:hover, #dropitList .di-sortable th.di-active { color: #fff; }
+
+#dropitList tr:nth-child(2n) { background-color: #f0f0f0; }
+#dropitList tr.di-odd { background-color: #fff; }
+#dropitList tr.di-even { background-color: #f0f0f0; }
+
+#dropitList .di-sortable td.di-activeColumn { color: #333; font-weight: bold; }
+
+#dropitList .di-tableSortArrow { top: -1px; }
+
+#dropitList form.di-filter input.di-searchField {
+    background-color: #f7f7f7;
+	color: #777;
+	border: 1px solid #c7c7c7;
+}
+
+#dropitList form.di-filter input:focus { border-color: #ccc; color: #333; }
+
+#dropitList form.di-filter input.di-clearFilterButton:hover { color: #C30; }
+#dropitList form.di-filter input.di-clearFilterButton { color: #aaa; }
+
+#dropitList a.di-clearFilterLink:hover { color: #C30; }
+</style>
+</head>
+
+<body>
+<div id="dropitList">
+
+<div id="di-bg-header"></div>
+
+<div id="di-container">
+
+<div id="di-main-wrap">
+
+<div id="di-header-wrap">
+
+<div id="di-header">
+	<h1>软件下载链接</h1>
+	<ul id="di-infoline">
+		<li><strong>创建</strong>: 04/10/2017</li>
+		<li><strong>规则</strong>: *.url</li>
+		<li class="di-last"><strong>所有</strong>: <span id="di-count">76</span></li>
+		<li>此列表仅用于记录软件下载地址</li>
+	</ul>
+</div><!-- #di-header -->
+</div><!-- #di-header-wrap -->
+
+<div id="di-table">
+<table id="di-mainTable" cellpadding="0" cellspacing="0">
+<thead>
+<tr>
+	<th>软件名称</th>
+	<th>下载地址</th>
+</tr>
+
+</thead>
+<tb
+ody>
+
+
+<tr>
+<td><a href="http://www.officialkmspico.com/">KMSpico</a></td>
+<td><a href="http://www.officialkmspico.com/">http://www.officialkmspico.	com/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.winrar.com.cn/">WinRAR</a></td>
+<td><a href="http://www.winrar.com.cn/">http://www.winrar.com.cn/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.52pojie.cn/thread-563549-1-1.html">破解版WinRAR</a></td>
+<td><a href="https://www.52pojie.cn/thread-563549-1-1.html">https://www.52pojie.cn/thread-563549-1-1.html</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.7-zip.org/">7z</a></td>
+<td><a href="http://www.7-zip.org/">http://www.7-zip.org/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.bandisoft.com/bandizip/cn/">Bandizip</a></td>
+<td><a href="https://www.bandisoft.com/bandizip/cn/">https://www.bandisoft.com/bandizip/cn/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://yasuo.360.cn/">360压缩</a></td>
+<td><a href="http://yasuo.360.cn/">http://yasuo.360.cn/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.peazip.org/">PeaZip</a></td>
+<td><a href="http://www.peazip.org/">http://www.peazip.org/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.winzip.com/win/en/downwz.html">WinZIP</a></td>
+<td><a href="http://www.winzip.com/win/en/downwz.html">http://www.winzip.com/win/en/downwz.html</a></td>
+</tr>
+
+<tr>
+<td><a href="http://ss.ishadowx.com/index_cn.html">Shadowsocks</a></td>
+<td><a href="http://ss.ishadowx.com/index_cn.html">http://ss.ishadowx.com/index_cn.html</a></td>
+</tr>
+
+<tr>
+<td><a href="http://s3.amazonaws.com/fddc-r090-rtqi/zh.html#is_my_psiphon_3_for_windows_authentic?appinstall=0">Psiphon3</a></td>
+<td><a href="http://s3.amazonaws.com/fddc-r090-rtqi/zh.html#is_my_psiphon_3_for_windows_authentic?appinstall=0">http://s3.amazonaws.com/fddc-r090-rtqi/zh.html#is_my_psiphon_3_for_windows_authentic?appinstall=0</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome me安装包</a></td>
+<td><a href="https://www.google.com/chrome/browser/desktop/index.html">https://www.google.com/chrome/browser/desktop/index.html</a></td>
+</tr>
+
+<tr>
+<td><a href="https://api.shuax.com/tools/getchrome">GetChrome</a></td>
+<td><a href="https://api.shuax.com/tools/getchrome">https://api.shuax.com/tools/getchrome</a></td>
+</tr>
+
+<tr>
+<td><a href="https://ie.sogou.com/">搜狗浏览器</a></td>
+<td><a href="https://ie.sogou.com/">https://ie.sogou.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.firefox.com.cn/download/">火狐浏览器</a></td>
+<td><a href="http://www.firefox.com.cn/download/">http://www.firefox.com.cn/download/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.maxthon.com/nitro/">Maxthon Nitro 浏览器</a></td>
+<td><a href="http://www.maxthon.com/nitro/">http://www.maxthon.com/nitro/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://chrome.360.cn/">360极速浏览器</a></td>
+<td><a href="http://chrome.360.cn/">http://chrome.360.cn/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.huorong.cn/">火绒安全软件</a></td>
+<td><a href="http://www.huorong.cn/">http://www.huorong.cn/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.piriform.com/ccleaner/download/standard">CCleaner</a></td>
+<td><a href="https://www.piriform.com/ccleaner/download/standard">https://www.piriform.com/ccleaner/download/standard</a></td>
+</tr>
+
+<tr>
+<td><a href="https://dl.lizhi.io/sandboxie">Sandboxie</a></td>
+<td><a href="https://dl.lizhi.io/sandboxie">https://dl.lizhi.io/sandboxie</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.avast.com/zh-cn/index">Avast</a></td>
+<td><a href="https://www.avast.com/zh-cn/index">https://www.avast.com/zh-cn/index</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.360.cn/">360安全卫士</a></td>
+<td><a href="https://www.360.cn/">https://www.360.cn/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.freedownloadmanager.org/">FDMManager</a></td>
+<td><a href="http://www.freedownloadmanager.org/">http://www.freedownloadmanager.org/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.52pojie.cn/thread-640996-1-1.html">Aria2 便携版下载地址</a></td>
+<td><a href="https://www.52pojie.cn/thread-640996-1-1.html">https://www.52pojie.cn/thread-640996-1-1.html</a></td>
+</tr>
+
+<tr>
+<td><a href="http://aria2c.com/">Aria2 控制台</a></td>
+<td><a href="http://aria2c.com/">http://aria2c.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://fenxiang.qq.com/">QQ旋风</a></td>
+<td><a href="http://fenxiang.qq.com/">http://fenxiang.qq.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.xunlei.com/">迅雷9</a></td>
+<td><a href="http://www.xunlei.com/">http://www.xunlei.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://im.qq.com/">QQ</a></td>
+<td><a href="https://im.qq.com/">https://im.qq.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://weixin.qq.com/">微信</a></td>
+<td><a href="https://weixin.qq.com/">https://weixin.qq.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.microsoft.com/zh-cn/store/p/telegram-desktop/9nztwsqntd0s">Telegram</a></td>
+<td><a href="https://www.microsoft.com/zh-cn/store/p/telegram-desktop/9nztwsqntd0s">https://www.microsoft.com/zh-cn/store/p/telegram-desktop/9nztwsqntd0s</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.yy.com/yy8/">YY语音</a></td>
+<td><a href="http://www.yy.com/yy8/">http://www.yy.com/yy8/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://pinyin.sogou.com/">搜狗拼音输入法</a></td>
+<td><a href="http://pinyin.sogou.com/">http://pinyin.sogou.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://ivarptr.github.io/yu-writer.site/">QQ输入法</a></td>
+<td><a href="https://ivarptr.github.io/yu-writer.site/">https://ivarptr.github.io/yu-writer.site/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://notepad-plus-plus.org/">NotePad+ +</a></td>
+<td><a href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://atom.io/">Atom</a></td>
+<td><a href="https://atom.io/">https://atom.io/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.sublimetext.com/">Sublime Text</a></td>
+<td><a href="http://www.sublimetext.com/">http://www.sublimetext.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://code.visualstudio.com/">VSCode</a></td>
+<td><a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://ivarptr.github.io/yu-writer.site/">Yu Writer</a></td>
+<td><a href="https://ivarptr.github.io/yu-writer.site/">https://ivarptr.github.io/yu-writer.site/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.typora.io/">typora</a></td>
+<td><a href="https://www.typora.io/">https://www.typora.io/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://music.163.com/">网易云音乐</a></td>
+<td><a href="https://music.163.com/">https://music.163.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://y.qq.com/">QQ音乐</a></td>
+<td><a href="https://y.qq.com/">https://y.qq.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.splayer.org/">射手播放器</a></td>
+<td><a href="https://www.splayer.org/">https://www.splayer.org/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://potplayer.daum.net/">PotPlayer</a></td>
+<td><a href="https://potplayer.daum.net/">https://potplayer.daum.net/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.baofeng.com/">暴风影音</a></td>
+<td><a href="http://www.baofeng.com/">http://www.baofeng.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.5kplayer.com/">5KPlayer</a></td>
+<td><a href="https://www.5kplayer.com/">https://www.5kplayer.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.dandanplay.com/">弹弹Play</a></td>
+<td><a href="http://www.dandanplay.com/">http://www.dandanplay.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://support.apple.com/zh_CN/downloads/quicktime">QuickTime</a></td>
+<td><a href="https://support.apple.com/zh_CN/downloads/quicktime">https://support.apple.com/zh_CN/downloads/quicktime</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.yinxiang.com/download/">印象笔记</a></td>
+<td><a href="https://www.yinxiang.com/download/">https://www.yinxiang.com/download/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.microsoft.com/zh-cn/store/p/evernote/9wzdncrfj3mb">印象笔记 微软应用商店下载地址</a></td>
+<td><a href="https://www.microsoft.com/zh-cn/store/p/evernote/9wzdncrfj3mb">https://www.microsoft.com/zh-cn/store/p/evernote/9wzdncrfj3mb</a></td>
+</tr>
+
+<tr>
+<td><a href="https://maxiang.io/client_zh">马克飞象</a></td>
+<td><a href="https://maxiang.io/client_zh">https://maxiang.io/client_zh</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.apple.com/cn/itunes/download/">iTunes</a></td>
+<td><a href="https://www.apple.com/cn/itunes/download/">https://www.apple.com/cn/itunes/download/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.itools.cn/">iTools</a></td>
+<td><a href="http://www.itools.cn/">http://www.itools.cn/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://imazing.com/zh">iMazing 2</a></td>
+<td><a href="https://imazing.com/zh">https://imazing.com/zh</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.i-funbox.com/zh-cn_download.html">iFunbox box</a></td>
+<td><a href="http://www.i-funbox.com/zh-cn_download.html">http://www.i-funbox.com/zh-cn_download.html</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.itools.cn/">iTools</a></td>
+<td><a href="http://www.itools.cn/">http://www.itools.cn/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.jianguoyun.com/">坚果云</a></td>
+<td><a href="https://www.jianguoyun.com/">https://www.jianguoyun.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://pan.baidu.com/download">百度网盘</a></td>
+<td><a href="http://pan.baidu.com/download">http://pan.baidu.com/download</a></td>
+</tr>
+
+<tr>
+<td><a href="https://support.apple.com/zh-cn/HT204283">iCloud</a></td>
+<td><a href="https://support.apple.com/zh-cn/HT204283">https://support.apple.com/zh-cn/HT204283</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.weiyun.com/">微云</a></td>
+<td><a href="https://www.weiyun.com/">https://www.weiyun.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.dropbox.com/">Dropbox</a></td>
+<td><a href="https://www.dropbox.com/">https://www.dropbox.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://store.steampowered.com/about/">Steam</a></td>
+<td><a href="http://store.steampowered.com/about/">http://store.steampowered.com/about/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.battlenet.com.cn/account/download/">战网客户端</a></td>
+<td><a href="https://www.battlenet.com.cn/account/download/">https://www.battlenet.com.cn/account/download/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://tgp.qq.com/">TGP</a></td>
+<td><a href="http://tgp.qq.com/">http://tgp.qq.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.ubisoft.com.cn/">育碧</a></td>
+<td><a href="http://www.ubisoft.com.cn/">http://www.ubisoft.com.cn/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.sonkwo.com/tool">杉果</a></td>
+<td><a href="https://www.sonkwo.com/tool">https://www.sonkwo.com/tool</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.cga.com.cn/index/down">浩方对战平台</a></td>
+<td><a href="http://www.cga.com.cn/index/down">http://www.cga.com.cn/index/down</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.uderzo.it/main_products/space_sniffer/">SpaceSniffer</a></td>
+<td><a href="http://www.uderzo.it/main_products/space_sniffer/">http://www.uderzo.it/main_products/space_sniffer/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.cpuid.com/">CPU Z</a></td>
+<td><a href="https://www.cpuid.com/">https://www.cpuid.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.techpowerup.com/download/techpowerup-gpu-z/">GPU Z</a></td>
+<td><a href="https://www.techpowerup.com/download/techpowerup-gpu-z/">https://www.techpowerup.com/download/techpowerup-gpu-z/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.duetdisplay.com/">Duet</a></td>
+<td><a href="https://www.duetdisplay.com/">https://www.duetdisplay.com/</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.appcgn.com/ansifa-adobe-cs6">Adobe系列精简版下载地址.url</a></td>
+<td><a href="https://www.appcgn.com/ansifa-adobe-cs6">https://www.appcgn.com/ansifa-adobe-cs6</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.microsoft.com/zh-cn/store/p/tablet-pro/9nblggh1rqvc">Tablet Pro微软应用商店下载地址</a></td>
+<td><a href="https://www.microsoft.com/zh-cn/store/p/tablet-pro/9nblggh1rqvc">https://www.microsoft.com/zh-cn/store/p/tablet-pro/9nblggh1rqvc</a></td>
+</tr>
+
+<tr>
+<td><a href="http://www.lovesummertrue.com/touchmousepointer/en-us/download.html">TouchMousePointer</a></td>
+<td><a href="http://www.lovesummertrue.com/touchmousepointer/en-us/download.htm">http://www.lovesummertrue.com/touchmousepointer/en-us/download.htm</a></td>
+</tr>
+
+<tr>
+<td><a href="https://mapgun.com/archives/1619">TouchMousePointer 汉化 博客持续更新</a></td>
+<td><a href="https://mapgun.com/archives/1619">https://mapgun.com/archives/1619</a></td>
+</tr>
+
+<tr>
+<td><a href="http://getitfree.cn/?pan">正版中国</a></td>
+<td><a href="http://getitfree.cn/?pan">http://getitfree.cn/?pan</a></td>
+</tr>
+
+<tr>
+<td><a href="https://www.microsoft.com/zh-cn/store/apps/windows/">微软应用商店</a></td>
+<td><a href="https://www.microsoft.com/zh-cn/store/apps/windows/">https://www.microsoft.com/zh-cn/store/apps/windows/</a></td>
+</tr>
+
+</tbody>
+</table>
+</div><!-- #table -->
+
+</div><!-- #di-main-wrap -->
+
+<div id="di-footer-wrap">
+	<div id="di-footer">
+
+	<a id="di-top" href="#" title="转到顶部">回到顶部</a>
+	</div><!-- #di-footer -->
+</div><!-- #di-footer-wrap -->
+
+</div><!-- #di-container -->
+
+</div><!-- #dropitList -->
+
+<script type="text/javascript" charset="utf-8">
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+		if (typeof window.onload != "function") {
+			window.onload = func
+		} else {
+			window.onload = function() {
+				if (oldonload) {
+					oldonload()
+				}
+			func()
+		}
+	}
+}
+</script>
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+var mainTable, t;
+
+function prepareTable() {
+	mainTable = document.getElementById('di-mainTable');
+	mainTable.className = "di-sortable";
+
+	for(i=0; i < mainTable.getElementsByTagName("TH").length; i++) {
+		var headValue = mainTable.getElementsByTagName("TH")[i].innerHTML;
+		mainTable.getElementsByTagName("TH")[i].innerHTML = "<div>" + headValue + "</div>";
+	}
+
+	t = new SortableTable(mainTable);
+}
+
+function SortableTable(tableEl) {
+	this.tbody = tableEl.getElementsByTagName('tbody');
+	this.thead = tableEl.getElementsByTagName('thead');
+	this.tfoot = tableEl.getElementsByTagName('tfoot');
+
+	this.getInnerText = function(el) {
+		if (typeof(el.textContent) != 'undefined') return el.textContent;
+		if (typeof(el.innerText) != 'undefined') return el.innerText;
+		if (typeof(el.innerHTML) == 'string') return el.innerHTML.replace(/<[^<>]+>/g,'');
+	}
+
+	this.getParent = function(el, pTagName) {
+		if (el == null) return null;
+		else if (el.nodeType == 1 && el.tagName.toLowerCase() == pTagName.toLowerCase())
+			return el;
+		else
+			return this.getParent(el.parentNode, pTagName);
+	}
+
+	this.sort = function(cell) {
+	    var column = cell.cellIndex;
+	    var itm = this.getInnerText(this.tbody[0].rows[1].cells[column]);
+		var sortfn = this.sortCaseInsensitive;
+
+		if (itm.match(/^(\d\d?)[\/\.-](\d\d?)[\/\.-]((\d\d)?\d\d)(\s\d\d[\.:]\d\d)?$/)) sortfn = this.sortDate;
+		if (itm.match(/^([\d\.,]+)\s*(b|kb|mb|gb|tb)/i)) sortfn = this.sortSize;
+		if (itm.replace(/^\s+|\s+$/g,"").match(/^[\d\.]+$/)) sortfn = this.sortNumeric;
+
+		this.sortColumnIndex = column;
+		cells = document.getElementsByTagName('TD');
+		for (i=0;i<cells.length;i++) {
+			removeClass(cells[i], "di-activeColumn");
+		}
+
+		var zebra = "di-odd";
+
+		for (i=0;i<this.tbody[0].rows.length;i++) {
+			addClass(this.tbody[0].rows[i].cells[column], "di-activeColumn");
+		}
+
+	    var newRows = new Array();
+	    for (i=0;i<this.tbody[0].rows.length;i++) {
+			newRows[i] = this.tbody[0].rows[i];
+		}
+		newRows.sort(sortfn);
+
+		if (document.getElementsByClassName == undefined) {
+			document.getElementsByClassName = function(className) {
+				var hasClassName = new RegExp("(?:^|\\s)"+className+"(?:$|\\s)");
+				var allElements = document.getElementsByTagName("*");
+				var results = [];
+				var element;
+				for (i=0;(element=allElements[i])!=null;i++) {
+					var elementClass = element.className;
+					if (elementClass && elementClass.indexOf(className) != -1 && hasClassName.test(elementClass)) results.push(element);
+				}
+				return results;
+			}
+		}
+
+		var arrows = document.getElementsByClassName('di-tableSortArrow');
+		for (i=0;i<arrows.length;i++) {
+			var arrowParent = arrows[i].parentNode;
+			arrowParent.removeChild(arrows[i]);
+		}
+		var spanEl = document.createElement('span');
+		spanEl.className = 'di-tableSortArrow';
+		if (cell.getAttribute('sortdir') == 'down') {
+			newRows.reverse();
+			spanEl.appendChild(document.createTextNode(' \u25bc'));
+			cell.setAttribute('sortdir','up');
+		} else {
+			cell.setAttribute('sortdir','down');
+			spanEl.appendChild(document.createTextNode(' \u25b2'));
+		}
+
+		cell.getElementsByTagName('DIV')[0].appendChild(spanEl);
+		for (i=0;i<newRows.length;i++) {
+			this.tbody[0].appendChild(newRows[i]);
+		}
+	}
+
+	this.sortCaseInsensitive = function(a,b) {
+		aa = thisObject.getInnerText(a.cells[thisObject.sortColumnIndex]).toLowerCase();
+		bb = thisObject.getInnerText(b.cells[thisObject.sortColumnIndex]).toLowerCase();
+		if (aa==bb) return 0;
+		if (aa<bb) return -1;
+		return 1;
+	}
+
+	this.sortDate = function(a,b) {
+		aa = thisObject.getInnerText(a.cells[thisObject.sortColumnIndex]);
+		bb = thisObject.getInnerText(b.cells[thisObject.sortColumnIndex]);
+		date1 = aa.substr(6,4)+aa.substr(3,2)+aa.substr(0,2)+aa.substr(11,2)+aa.substr(14,2);
+		date2 = bb.substr(6,4)+bb.substr(3,2)+bb.substr(0,2)+bb.substr(11,2)+bb.substr(14,2);
+		if (date1==date2) return 0;
+		if (date1<date2) return -1;
+		return 1;
+	}
+
+	this.sortSize = function(a,b) {
+		aa = thisObject.getInnerText(a.cells[thisObject.sortColumnIndex]);
+		bb = thisObject.getInnerText(b.cells[thisObject.sortColumnIndex]);
+		regex = /^([\d\.,]+)\s*(b|kb|mb|gb|tb)/i;
+		mcA = aa.match(regex);
+		mcB = bb.match(regex);
+		ssA = mcA[2].toLowerCase();
+		ssB = mcB[2].toLowerCase();
+
+		if (ssA=='b') valA = 1;
+		else if (ssA=='kb') valA = 2;
+		else if (ssA=='mb') valA = 3;
+		else if (ssA=='gb') valA = 4;
+		else if (ssA=='tb') valA = 5;
+		if (ssB=='b') valB = 1;
+		else if (ssB=='kb') valB = 2;
+		else if (ssB=='mb') valB = 3;
+		else if (ssB=='gb') valB = 4;
+		else if (ssB=='tb') valB = 5;
+
+		if (valA==valB) {
+			return mcA[1] - mcB[1];
+		} else if (valA<valB) {
+			return -1;
+		} else if (valA>valB) {
+			return 1;
+		}
+	}
+
+	this.sortNumeric = function(a,b) {
+		aa = parseFloat(thisObject.getInnerText(a.cells[thisObject.sortColumnIndex]));
+		bb = parseFloat(thisObject.getInnerText(b.cells[thisObject.sortColumnIndex]));
+		if (isNaN(aa)) aa = 0;
+		if (isNaN(bb)) bb = 0;
+		return aa-bb;
+	}
+
+	var thisObject = this;
+	var sortSection = this.thead;
+	if (!(this.tbody && this.tbody[0].rows && this.tbody[0].rows.length > 0)) return;
+	if (sortSection && sortSection[0].rows && sortSection[0].rows.length > 0) {
+		var sortRow = sortSection[0].rows[0];
+	} else {
+		return;
+	}
+	for (i=0;i<sortRow.cells.length;i++) {
+		sortRow.cells[i].sTable = this;
+		sortRow.cells[i].onclick = function () {
+			this.sTable.sort(this);
+			theads = this.parentNode.getElementsByTagName('TH');
+			for (j=0; j < theads.length; j++) {
+				removeClass(theads[j], "di-active");
+			}
+			addClass(this, "di-active");
+			zebraStripes();
+			return false;
+		}
+
+	}
+}
+
+var zebraStripes = function () {
+	var zebra = "di-odd";
+	var counter = 0;
+	for (var r = 1; r < mainTable.rows.length; r++) {
+		if(mainTable.rows[r].style.display == '') {
+			if(counter == 0) zebra = "di-odd";
+			mainTable.rows[r].className = zebra;
+			(zebra == "di-odd") ? zebra = "di-even" : zebra = "di-odd";
+			counter++;
+		}
+	}
+}
+
+function hasClass(ele,cls) {
+	return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+}
+
+function addClass(ele,cls) {
+	if (!this.hasClass(ele,cls)) ele.className += " "+cls;
+}
+
+function removeClass(ele,cls) {
+	if (hasClass(ele,cls)) {
+    	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+		ele.className=ele.className.replace(reg,' ');
+	}
+}
+
+addLoadEvent(function() {
+	prepareTable();
+	zebraStripes();
+	}
+);
+//]]>
+</script>
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+var clearFilterText = "清除筛选器";
+var noResultsText = "没有与此条件匹配的项:";
+var searchFieldText = "筛选器...";
+
+var zebra, clearFilterText, form, table, noResultsSpan, noResults, clearFilterLink, clearFilterButton, noResultsText, searchFieldText, filterTable, input, clearSearch;
+
+function prepareEvents() {
+    'use strict';
+    input.onfocus = function () { if (this.value === searchFieldText) { this.value = ""; } };
+    input.onblur = function () { if (this.value === "") { this.value = searchFieldText;  } };
+    input.onkeyup = function () { filterTable(input, table); };
+    clearFilterButton.onclick = function () { clearSearch(true); };
+    clearFilterLink.onclick = function () { clearSearch(false); };
+    form.onsubmit = function () { return false; };
+    if (document.getElementById('di-fixed')) {
+        window.onscroll = checkPos;
+    }
+    window.onresize = filterBoxPos;
+}
+
+function prepareFilter() {
+    table = document.getElementById('di-mainTable');
+    form = document.createElement('form');
+    input = document.createElement('input');
+    noResults = document.createElement('p');
+    noResultsSpan = document.createElement('span');
+    clearFilterLink = document.createElement('a');
+    clearFilterButton = document.createElement('input');
+    zebra = "di-odd";
+    if (clearFilterText === '' || clearFilterText === undefined) { clearFilterText = "clear filter"; }
+    if (noResultsText === '' || noResultsText === undefined) { noResultsText = "No results for"; }
+    if (searchFieldText === '' || searchFieldText === undefined) { searchFieldText = "filter..."; }
+
+    form.setAttribute('class', 'di-filter');
+    form.attributes['class'].value = 'di-filter';
+
+    input.setAttribute('class', 'di-searchField');
+    input.attributes['class'].value = 'di-searchField';
+    input.value = searchFieldText;
+    form.appendChild(input);
+    document.getElementById('di-header').appendChild(form);
+
+	setTableWidth();
+
+    noResults.className = 'di-noResults';
+    noResults.style.display = 'none';
+    noResults.appendChild(noResultsSpan);
+    table.parentNode.appendChild(noResults);
+
+    clearFilterLink.className = 'di-clearFilterLink';
+    clearFilterLink.innerHTML = clearFilterText;
+    clearFilterButton.setAttribute('type', 'button');
+    clearFilterButton.className = 'di-clearFilterButton';
+    clearFilterButton.value = 'x';
+    clearFilterButton.style.display = 'none';
+    form.appendChild(clearFilterButton);
+
+	for (i = 1; i < table.getElementsByTagName('tbody')[0].getElementsByTagName('tr').length; i += 2) {
+		table.getElementsByTagName('tbody')[0].getElementsByTagName('tr')[i].className = 'di-even';
+	}
+}
+
+function setTableWidth() {
+	var i, thead = document.getElementById("di-mainTable").getElementsByTagName('th');
+    for (i = 0; i < thead.length; i++) {
+		var currWidth = Math.round(parseInt(thead[i].offsetWidth, 10));
+        thead[i].setAttribute("style", "width: " + currWidth + "px;");
+    }
+}
+
+var filterBoxPos = function  () {
+    if (table.offsetWidth > document.documentElement.offsetWidth) {
+        form.setAttribute('id', 'di-fixed');
+        form.attributes.id.value = 'di-fixed';
+    } else {
+        form.removeAttribute('id');
+    }
+}
+
+var checkPos = function () {
+        var pageY = !isNaN(window.pageYOffset) ? window.pageYOffset : document.documentElement.scrollTop;
+        form.style.display = (pageY > 50) ? 'none' : 'block';
+	};
+
+function clearSearch(focus) {
+    'use strict';
+	input.value = "";
+	filterTable(input, table);
+	input.value = searchFieldText;
+    if (focus === true) { input.focus(); }
+}
+
+function filterTable(term, table) {
+    'use strict';
+	dehighlight(table);
+	var terms = term.value.toLowerCase().split(" ");
+    var counter = 0, i, r, display, rowCount = 0;
+	for (r = 1; r < table.rows.length; r += 1) {
+		display = '';
+
+		for (i = 0; i < terms.length; i += 1) {
+			if (table.rows[r].innerHTML.replace(/<[^>]+>/g, "").toLowerCase().indexOf(terms[i]) < 0) {
+				display = 'none';
+			} else {
+			    if (terms[i].length) highlight(terms[i], table.rows[r]);
+			}
+			table.rows[r].style.display = display;
+		}
+
+		if (display === '') {
+			if (counter === 0) { zebra = "di-odd"; }
+			table.rows[r].className = zebra;
+			zebra = (zebra === "di-odd") ? "di-even" : "di-odd";
+			counter++;
+		}
+	}
+
+	for (i = 1; i < table.rows.length; i++) {
+		if (table.rows[i].style.display === 'none') { rowCount++; }
+	}
+
+	var totalRows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr').length;
+
+	var filtered = (rowCount > 0) ? " / " + totalRows : "";
+	document.getElementById('di-count').innerHTML = totalRows - rowCount + filtered;
+
+	if (rowCount === table.rows.length - 1) {
+		noResultsSpan.innerHTML = noResultsText + "&nbsp;\"" + input.value + "\". ";
+		noResults.appendChild(clearFilterLink);
+		noResults.style.display = 'block';
+	} else {
+		noResults.style.display = 'none';
+	}
+
+	clearFilterButton.style.display = (input.value !== '' && input.value !== searchFieldText) ? 'block' : 'none';
+}
+
+function dehighlight(container) {
+    for (var i = 0; i < container.childNodes.length; i++) {
+        var node = container.childNodes[i];
+
+        if (node.attributes && node.attributes['class']
+            && node.attributes['class'].value == 'highlighted') {
+            node.parentNode.parentNode.replaceChild(document.createTextNode(node.parentNode.innerHTML.replace(/<[^>]+>/g, "")), node.parentNode);
+            return;
+        } else if (node.nodeType != 3) {
+            dehighlight(node);
+        }
+    }
+}
+
+function highlight(term, container) {
+    for (var i = 0; i < container.childNodes.length; i++) {
+        var node = container.childNodes[i];
+
+        if (node.nodeType == 3) {
+            var data = node.data;
+            var data_low = data.toLowerCase();
+            if (data_low.indexOf(term) >= 0) {
+                var new_node = document.createElement('span');
+                node.parentNode.replaceChild(new_node, node);
+                var result;
+                while ((result = data_low.indexOf(term)) != -1) {
+                    new_node.appendChild(document.createTextNode(data.substr(0, result)));
+                    new_node.appendChild(create_node(document.createTextNode(data.substr(result, term.length))));
+                    data = data.substr(result + term.length);
+                    data_low = data_low.substr(result + term.length);
+                }
+                new_node.appendChild(document.createTextNode(data));
+            }
+        } else {
+            highlight(term, node);
+        }
+    }
+}
+
+function create_node(child) {
+    var node = document.createElement('span');
+    node.setAttribute('class', 'highlighted');
+    node.attributes['class'].value = 'highlighted';
+    node.appendChild(child);
+    return node;
+}
+
+addLoadEvent(function() {
+	prepareFilter();
+	prepareEvents();
+});
+//]]>
+</script>
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+var viewText = "查看";
+
+var imgLink, aLinks, theWidth, theHeight;
+var multiplier = 0.7;
+
+if (window.innerWidth) {
+		theWidth=window.innerWidth;
+	} else if (document.documentElement && document.documentElement.clientWidth) {
+		theWidth=document.documentElement.clientWidth;
+	} else if (document.body) {
+		theWidth=document.body.clientWidth;
+	} if (window.innerHeight) {
+		theHeight=window.innerHeight;
+	} else if (document.documentElement && document.documentElement.clientHeight) {
+		theHeight=document.documentElement.clientHeight;
+	} else if (document.body) {
+		theHeight=document.body.clientHeight;
+}
+
+aLinks = document.getElementById('di-mainTable').getElementsByTagName('a');
+
+for (i = 0; i < aLinks.length; i++) {
+    imgLink = aLinks[i].href.match(/\.(?:jpg|gif|png|webp)/gi);
+    if (imgLink !== null) {
+        aLinks[i].setAttribute('rel', 'lighterbox');
+        aLinks[i].setAttribute('title', aLinks[i].href.substring(aLinks[i].href.lastIndexOf("/") + 1, aLinks[i].href.length));
+		aLinks[i].innerHTML = viewText;
+    }
+}
+
+//By: Richard Lee - Transcendent Design - tdesignonline.com - RichardAndrewLee@yahoo.com
+//Optimization: Frdric MADSEN - MadsenFr@laposte.net
+var llocation
+lbox=document.createElement('div')
+lbox.id='lighterbox2'
+lbox.style.height=document.body.offsetHeight+'px'
+document.body.appendChild(lbox)
+lighterboxwrapper=document.createElement('div')
+lighterboxwrapper.id='lighterboxwrapper2'
+lbox.appendChild(lighterboxwrapper)
+lc=document.createElement('div')
+lc.id='lighterboxclose2'
+lc.title=''
+lbox.appendChild(lc)
+labox=document.createElement('div')
+labox.id='lighterboxcontent2'
+lighterboxwrapper.appendChild(labox)
+portimage=document.createElement('img')
+portimage.id='lighterboxportimage2'
+portimage.title=''
+labox.appendChild(portimage)
+title_=document.createElement('div')
+title_.id='lighterboxtitle2'
+title_.appendChild(document.createTextNode(''))
+labox.appendChild(title_)
+lboxlink=document.createElement('div')
+lboxlink.id='lighterboxclosebutton2'
+labox.appendChild(lboxlink)
+description_=document.createElement('div')
+description_.id='lighterboxdescription2'
+description_.appendChild(document.createTextNode(''))
+labox.appendChild(description_)
+pi=document.createElement('span')
+pi.id='lighterboxprevimage2'
+pi.title=''
+pi.appendChild(document.createTextNode('<'))
+lboxlink.appendChild(pi)
+ni=document.createElement('span')
+ni.id='lighterboxnextimage2'
+ni.title=''
+ni.appendChild(document.createTextNode('>'))
+lboxlink.appendChild(ni)
+ci=document.createElement('span')
+ci.id='lighterboxcloseimage2'
+ci.title=''
+ci.appendChild(document.createTextNode('X'))
+lboxlink.appendChild(ci)
+piclinks=document.getElementsByTagName('a')
+picarray=new Array()
+for(var z=0;z<piclinks.length;z++)
+	if(piclinks[z].rel=='lighterbox'){
+		picarray.push(piclinks[z])
+		piclinks[z].onclick=function(){
+			for(var i=0;i<picarray.length;i++)if(picarray[i]==this){
+				llocation=i
+				break}
+			setpic(this)
+			return false}}
+function close(){
+	portimage.src='none'
+	lbox.style.display='none'}
+ci.onclick=close
+function setpic(thispic){
+	lc.onclick=close
+	function nif(){
+		if(llocation==picarray.length-1)llocation=-1
+		setpic(picarray[llocation+=1])}
+	ni.onclick=nif
+	portimage.onclick=nif
+	pi.onclick=function(){
+		if(llocation==0)llocation=picarray.length
+		setpic(picarray[llocation-=1])}
+	function checkKeycode(e){
+		if(lbox.style.display=='block'){
+			if(e)keycode=e.which
+			else keycode=window.event.keyCode
+			if(keycode==37){
+				if(llocation==0)llocation=picarray.length
+				setpic(picarray[llocation-=1])}
+			else if(keycode==27)close()
+			else if(keycode==39||keycode==13)nif()}}
+	document.onkeydown=checkKeycode
+	portimage.style.opacity='0'
+    portimage.style.filter='alpha(opacity=0)'
+	portimage.src=thispic.href
+	description_.firstChild.nodeValue=thispic.title
+	title_.firstChild.nodeValue=(typeof(thispic.firstChild.alt)!='undefined'?thispic.firstChild.alt:'')
+
+	portimage.onload=function(){
+
+		var maxHeight = Math.floor(theHeight * multiplier);
+		var maxWidth = Math.floor(theWidth * multiplier);
+
+		var imgWidth = portimage.width;
+		var imgHeight = portimage.height;
+
+		if(imgWidth > maxWidth || imgHeight > maxHeight) {
+			if (imgWidth / imgHeight < maxWidth / maxHeight ) {
+				portimage.style.maxHeight = maxHeight + "px";
+			} else {
+				portimage.style.maxWidth = maxWidth + "px";
+			}
+		}
+
+   		lighterboxwrapper.style.width=portimage.offsetWidth+24+'px'
+		lighterboxwrapper.style.marginLeft='-'+labox.offsetWidth/2-12+'px'
+		lighterboxwrapper.style.marginTop='-'+labox.offsetHeight/2-12+'px'
+		for(var fd=0;fd<6;fd++)setTimeout('portimage.style.opacity="'+fd/5+'";portimage.style.filter="alpha(opacity='+(fd*20)+')";',fd*25)
+	}
+
+	lbox.style.display='block'}
+window.onscroll=function(){if(lbox.style.display=='block')lbox.style.left=(document.documentElement.scrollLeft||document.body.scrollLeft)+'px'}
+//]]>
+</script>
+
+</body>
+</html>
