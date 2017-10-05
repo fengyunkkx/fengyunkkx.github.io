@@ -10,7 +10,7 @@ tags:
     - 学习
 ---
 
-## 起因，突发奇想做[网页导航](http://ifoxfactory.com/navigation/tools-real.html)
+## 起因，突发奇想做 [网页导航](http://ifoxfactory.com/navigation/navigation.html)
 
 前段时间突发奇想，想在自己的博客页面上搞一个静态的网页导航，实现一些常用网页的跳转，或者是一些软件的下载地址合集。
 
@@ -118,7 +118,7 @@ Markdown 转 HTML 生成的部分是用 `<li>` 标签实现的列表。
 
 探索的时间成本远远超出了手动修改的时间，但是这对我而言是一次掌握新知识，非常有价值。
 
-最后，附上完成的 [软件下载链接](http://ifoxfactory.com/navigation/tools-real.html)。
+最后，附上完成的 [网页导航](http://ifoxfactory.com/navigation/navigation.html) 和 [软件下载链接](http://ifoxfactory.com/navigation/tools-real.html)。
 
 ---
 
