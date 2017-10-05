@@ -10,7 +10,7 @@ tags:
     - 学习
 ---
 
-## 起因，突发奇想做网页导航
+## 起因，突发奇想做[网页导航](http://ifoxfactory.com/navigation/tools-real.html)
 
 前段时间突发奇想，想在自己的博客页面上搞一个静态的网页导航，实现一些常用网页的跳转，或者是一些软件的下载地址合集。
 
@@ -128,7 +128,7 @@ Markdown 转 HTML 生成的部分是用 `<li>` 标签实现的列表。
 
 [正则表达式教程 - Atom Yan ](http://www.cnblogs.com/atomplus/archive/2009/08/19/1549494.html)
 
-[正则表达式 – 匹配规则 | 菜鸟教程](http://www.runoob.com/regexp/regexp-rule.html)
+[正则表达式 - 匹配规则 - 菜鸟教程](http://www.runoob.com/regexp/regexp-rule.html)
 
 
 [正则表达式：Notepad++查找两段特殊字符之间文字并在该目标字符后面添加字符](http://blog.csdn.net/qq_23435721/article/details/50496064)
