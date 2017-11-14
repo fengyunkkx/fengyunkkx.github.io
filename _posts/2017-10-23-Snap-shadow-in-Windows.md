@@ -7,7 +7,7 @@ header-img: "img/in-post/2017-10-23-Snap-shadow-in-Windows/title-pic.png"
 header-mask: 0.3
 catalog:    true
 tags:
-    - 阴影
+    - 技巧
 ---
 
 # 在 Windows 上为图片添加阴影，让截图更好看
@@ -129,3 +129,5 @@ Ashampoo Snap 是一款大而全的截图软件，集成了非常多的截图相
 [Snip](http://snip.qq.com)：QQ 出品的 Mac 端轻量级截图工具，支持网页滚动截图。
 
 [SnappyApp](http://snappy-app.com/)：Mac 端的快速截图工具，可以将截图 Pin 在窗口前。
+
+本文首发于 [少数派](https://sspai.com/post/41443)。
