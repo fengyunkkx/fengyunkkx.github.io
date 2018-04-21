@@ -94,7 +94,7 @@ friends: [
         href: "https://www.sspai.com/"
       },
         {
-        title: "Windows 常用软件",
+        title: "我的 Windows 常用软件",
         href: "https://fengyunkkx.gitbooks.io/rapid-deployment-toolbox/"
       },
         {
@@ -108,6 +108,10 @@ friends: [
         {
         title: "ZZH Blog",
         href: "http://zzh9527.github.io/"
+      },
+        {
+        title: "Thoxvi Blog",
+        href: "http://blog.thoxvi.com/"
       },
 
 ]
