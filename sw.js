@@ -19,6 +19,7 @@ const PRECACHE_LIST = [
   "./js/bootstrap.min.js",
   "./js/hux-blog.min.js",
   "./js/snackbar.js",
+  "./js/canvas-nest.min.js",
   "./img/icon_wechat.png",
   "./img/avatar-hux.jpg",
   "./img/home-bg.jpg",
@@ -32,9 +33,8 @@ const PRECACHE_LIST = [
 ]
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
-  "huangxuan.me",
-  "yanshuo.io",
-  "cdnjs.cloudflare.com"
+  "ifoxfactory.com",
+  "fengyunkkx.github.io"
 ]
 const DEPRECATED_CACHES = ['precache-v1', 'runtime', 'main-precache-v1', 'main-runtime']
 
