@@ -42,7 +42,7 @@ Calibre 作为一款图书管理工具，本身的功能非常齐全，还可以
 
 NAS 上的 Docker 如果不进行调试，不需要用到任何命令行，全靠 GUI，所以总体而言难度不大。先看看搭建完成后的书库再折腾吧。
 
-![12](https://i.loli.net/2018/05/15/5afa443f11808.png)
+![12](https://i.loli.net/2018/05/15/5afa47d70ef6c.png)
 
 ## 尝试在 NAS 上安装 Docker 版本的 Calibre-web
 
@@ -134,7 +134,7 @@ NAS 上的 Docker 如果不进行调试，不需要用到任何命令行，全�
 
 如果显示 `DB location is not valid, please enter correct path `，那么问题有点大，你可能需要检查一下文件夹的权限是不是有问题，当前用户是否有该目录的读写权限等（出现这个问题的最大可能是镜像本身的问题，这个问题是我在使用 linuxserver/calibre-web 时出现的，这个镜像无法读取本地文件）。
 
-![12](https://i.loli.net/2018/05/15/5afa446134c39.png)
+![12](https://i.loli.net/2018/05/15/5afa47d70ef6c.png)
 
 到这里位置，书库应该已经搭建完毕了。总体难度并不是很大，跟着一步一步做就不会出什么问题。
 
