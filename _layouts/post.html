@@ -87,7 +87,29 @@ comments: true
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
-                    <div id="disqus_thread" class="disqus-thread"></div>
+                    <!--<div id="disqus_thread" class="disqus-thread"></div>-->
+                    <!-- disqus 评论框 关闭-->
+
+
+                    <!-- 来必力City版安装代码 -->
+                    <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjYyNC8xMzE1OQ==">
+                    	<script type="text/javascript">
+                       (function(d, s) {
+                           var j, e = d.getElementsByTagName(s)[0];
+
+                           if (typeof LivereTower === 'function') { return; }
+
+                           j = d.createElement(s);
+                           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                           j.async = true;
+
+                           e.parentNode.insertBefore(j, e);
+                       })(document, 'script');
+                    	</script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                    </div>
+                    <!-- City版安装代码已完成 -->
+
                 </div>
                 <!-- disqus 评论框 end -->
                 {% endif %}
@@ -97,7 +119,7 @@ comments: true
                 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
                 <!-- 网易云跟帖 评论框 end -->
                 {% endif %}
-            </div>  
+            </div>
 
     <!-- Side Catalog Container -->
         {% if page.catalog %}
@@ -160,7 +182,7 @@ comments: true
 <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
 <script>
   var cloudTieConfig = {
-    url: document.location.href, 
+    url: document.location.href,
     sourceId: "",
     productKey: "de25fc98a6fe48b3bc8a7ae765da99a0",
     target: "cloud-tie-wrapper"
@@ -174,25 +196,7 @@ comments: true
 
 {% if site.disqus_username %}
 
-<!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zNjYyNC8xMzE1OQ==">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
 
-       if (typeof LivereTower === 'function') { return; }
-
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
-</div>
-
-<!-- City版安装代码已完成 -->
 
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <!--
