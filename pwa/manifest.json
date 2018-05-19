@@ -1,15 +1,15 @@
 {
-  "name": "Fox Blog",
-  "short_name": "Fox Blog",
-  "description": "About an engineer & designer who loves web.",
+  "name": "沨沄的博客",
+  "short_name": "沨沄的博客",
+  "description": "爱科技，爱生活",
   "icons": [{
     "src": "icons/128.png",
-    "sizes": "128x128",
-    "type": "image/png"
+	"type": "image/png",
+    "sizes": "128x128"
   }, {
     "src": "icons/512.png",
-    "sizes": "512x512",
-    "type": "image/png"
+	"type": "image/png",
+    "sizes": "512x512"
   }],
   "background_color": "#fff",
   "theme_color": "#000",
