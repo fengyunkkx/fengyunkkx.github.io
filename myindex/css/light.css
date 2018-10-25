@@ -1,0 +1,350 @@
+/* @font-face {
+font-family: NuvoMediumWOFF;
+src: url(nuvo-medium-woff-demo.woff) format("woff");
+
+}*/
+
+body {
+    background: #ECECEC;
+    /*页面背景色*/
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+::selection {
+    background: #158fee;
+    color: #fff;
+}
+
+.kw input::selection {
+    background: #158fee;
+    color: #fff;
+}
+
+a:link {
+    color: #158fee;
+}
+
+a.wordsub:active {
+    border: 1px solid #158fee;
+}
+
+a:visited {
+    color: #158fee;
+}
+
+a:hover {
+    color: #3e58c9;
+}
+
+a.wordsub:hover {
+    border: 1px solid #158fee;
+}
+
+
+.content {
+    position: ;
+    margin: 8% 0 0 0;
+    width: 100%;
+    height: auto;
+    float: left;
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
+}
+
+.kw {
+    display: inline-block;
+    height: ;
+    width: 19%;
+    left: 10px;
+    vertical-align: top;
+    margin-top: 56px;
+    margin-left: 4px;
+    position: fixed;
+}
+
+.kw input {
+    width: 100%;
+    height: 48px;
+    left: 0;
+    font-size: 26px;
+    color: white;
+    border-width: 0px;
+    border-radius: 30px;
+    background-color: #AFAFAF;
+    /*输入框*/
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 6px;
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", sans-serif;
+    outline: none;
+}
+
+.hotword {
+    width: inherit;
+    height: 80px;
+    position: inherit;
+    background: url(icon/hwbg.png)repeat;
+    margin: -8px 0 0 -8px;
+}
+
+.word {
+    float: left;
+
+    height: 36px;
+    position: relative;
+    margin: -14px 0px 0px 25%;
+    padding-top: 14px;
+
+}
+
+.searchicon {
+    z-index: 2;
+    position: absolute;
+    margin-left: 87%;
+}
+
+.info {
+    position: fixed;
+    bottom: 2%;
+    width: 19%;
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 9pt;
+    color: #6F6F6F;
+}
+
+.wordinfo {
+    position: absolute;
+    width: 22%;
+    margin: 28px 0 0 14px;
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 10pt;
+    font-weight: 400;
+    color: #6F6F6F;
+}
+
+.wordinfo2 {
+    position: absolute;
+    width: 22%;
+    margin: 30px 0 0 14px;
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 9pt;
+    color: #AFAFAF;
+}
+
+.popular {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 7%;
+    margin-left: 23%;
+    padding-top: 14px;
+}
+
+.entrances {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    float: left;
+    position: relative;
+    /*background: blue;*/
+}
+
+.catalog {
+    float: left;
+    width: 160px;
+    background: #ECECEC;
+    height: 328px;
+    position: relative;
+    margin: 0px 6px 80px 6px;
+    padding-top: 14px;
+}
+
+.catalogname {
+    font-size: 14pt;
+    font-weight: 500;
+    text-align: center;
+    height: 34px;
+    margin: 0;
+    color: #158fee;
+
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.pop {
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 1);
+    border: 6px white;
+}
+
+.more_list {
+    background: #AFAFAF;
+    /* 更多列表配色 */
+    position: absolute;
+    z-index: 2;
+    height: auto;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2),
+        0px -1px 0px #333,
+        4px 4px 10px rgba(0, 0, 0, 0.2),
+        0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+    text-align: center;
+
+}
+
+.top img {
+    cursor: pointer;
+}
+
+.topicon {
+    display: inline-block;
+
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 1);
+    border: 6px #000000;
+}
+
+.topname {
+    display: block;
+    margin: 6px 0 0 0;
+    height: 24px;
+    font-size: 10pt;
+    font-weight: 100;
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color: #000000;
+
+}
+
+.catalog .sub {
+    display: inline-block;
+    width: 160px;
+    margin-top: 0px;
+    height: 32px;
+    display: block;
+    position: relative;
+}
+
+.addot {
+    background: #158fee;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0px 6px 9px 0px;
+    display: inline-block;
+}
+
+.wordsub {
+    display: inline-block;
+    border: 1px solid transparent;
+    margin: 0px 6px 8px 0px;
+    padding: 0px 6px 0px 12px;
+    height: 34px;
+    border-radius: 18px;
+    background-color: #AFAFAF;
+    display: inline-block;
+    position: relative;
+}
+
+
+.subicon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 1);
+    margin: 4px 0 0 16px;
+}
+
+.wordicon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin: 5px 0px 0px 6px;
+}
+
+.wordname {
+    display: inline-block;
+    margin: 10px 0 0 0px;
+    padding-top: 0px;
+    font-size: 12pt;
+    line-height: ;
+    vertical-align: top;
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    line-height: 90%;
+    word-break: break-all;
+    color: #000000;
+
+}
+
+.subname {
+    display: inline-block;
+    margin: 7px 0 0 6px;
+    padding-top: 5px;
+    font-size: 10pt;
+    line-height: ;
+    vertical-align: top;
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    line-height: 90%;
+    word-break: break-all;
+    color: #000000;
+}
+
+.subname2 {
+    display: inline-block;
+    margin: 1px 0 0 6px;
+    padding-top: 5px;
+    font-size: 10pt;
+    line-height: ;
+    vertical-align: top;
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    line-height: 90%;
+    word-break: break-all;
+    color: #000000;
+}
+
+.more_button {
+    vertical-align: bottom;
+
+    z-index: 2;
+    /*background-image: url(more.png);*/
+}
+
+.foot {
+    float: left;
+    display: inline-block;
+    margin-left: 24%;
+    font-family: "Lucida Grande", "ff-nuvo-web-pro-1", "ff-nuvo-web-pro-2", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 9pt;
+    color: #6F6F6F;
+    width: 70%;
+}
+
+.about {}
+
+.share {
+    position: 10%;
+    float: right;
+    width: 6%;
+}
+
+.comment {
+    color: #eee;
+    text-align: left;
+}
+
+#disqus_thread {
+    display: none;
+}
+
+.copyright {
+
+    float: left;
+}

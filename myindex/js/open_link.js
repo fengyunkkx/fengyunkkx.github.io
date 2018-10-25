@@ -1395,9 +1395,7 @@ var searchURL = {
         "home" : "http://jshmzy.myds.me:88"
     },
 
-
-
-
+    
      "phaidon": {
         "search" : "http://uk.phaidon.com/store/search/?q=%keyword%",
         "home" : "http://uk.phaidon.com/"
