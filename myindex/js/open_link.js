@@ -577,8 +577,8 @@ var searchURL = {
         "home" : "http://knowyourmeme.com"
     },
     "bilibili": {
-        "search" : "http://www.bilibili.tv/search?keyword=%keyword%",
-        "home" : "http://www.bilibili.tv"
+        "search" : "http://www.bilibili.com/search?keyword=%keyword%",
+        "home" : "http://www.bilibili.com"
     },
     "ted": {
         "search" : "http://www.ted.com/search?cat=ss_all&q=%keyword%",
