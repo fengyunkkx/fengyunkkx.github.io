@@ -5,7 +5,11 @@ date:       2019-02-16 22:16:10
 author:     "沨沄极客"
 header-mask: 0.3
 catalog:    true
-tags: Quicker,QuickerLab,效率,Windows
+tags: 
+    - Quicker
+    - QuickerLab
+    - 效率
+    - Windows
 ---
 
 # 这款新出的 Windows 软件，或许能成为你最爱的「利器」：Quicker
