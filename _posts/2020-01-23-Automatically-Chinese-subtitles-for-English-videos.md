@@ -38,19 +38,19 @@ tags:
     - [官方下载渠道](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
     - [第三方下载渠道](https://www.extfans.com/productivity/dhdgffkkebhmkfjojejmpbldmpobfkfo/)
 
-**注**：[油猴脚本基础使用方法](https://www.extfans.com/articles/489/)
-
-[https://www.extfans.com/articles/489/](https://www.extfans.com/articles/489/)
+- **注**：[油猴脚本基础使用方法](https://www.extfans.com/articles/489/)
 
 2. 在油猴插件市场 Greasyfork 下载字幕下载工具，感谢开发者 guokrfans@gmail.com。
 
-[自动字幕翻译成中文后的字幕下载插件](https://greasyfork.org/zh-CN/scripts/39188-youtube-%E8%87%AA%E5%8A%A8%E5%AD%97%E5%B9%95%E7%BF%BB%E8%AF%91%E6%88%90%E4%B8%AD%E6%96%87%E5%90%8E%E7%9A%84%E5%AD%97%E5%B9%95%E4%B8%8B%E8%BD%BD)
+    - [自动字幕翻译成中文后的字幕下载插件](https://greasyfork.org/zh-CN/scripts/39188-youtube-%E8%87%AA%E5%8A%A8%E5%AD%97%E5%B9%95%E7%BF%BB%E8%AF%91%E6%88%90%E4%B8%AD%E6%96%87%E5%90%8E%E7%9A%84%E5%AD%97%E5%B9%95%E4%B8%8B%E8%BD%BD)
 
-- **可选步骤**：自动切换中文字幕的油猴插件。
+![Snipaste_2020-01-23_02-23-19.png](https://i.loli.net/2020/01/23/ItERYcGjVuLkUxm.png)
 
-[Youtube自动切换中文字幕](https://greasyfork.org/zh-CN/scripts/382426-youtube%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2%E4%B8%AD%E6%96%87%E5%AD%97%E5%B9%95)
+3. **可选步骤**：自动切换中文字幕的油猴插件。
 
-[Youtube Subtitle Downloader v20](https://greasyfork.org/zh-CN/scripts/5368-youtube-subtitle-downloader-v20)
+    - [Youtube自动切换中文字幕](https://greasyfork.org/zh-CN/scripts/382426-youtube%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2%E4%B8%AD%E6%96%87%E5%AD%97%E5%B9%95)
+
+    - [Youtube Subtitle Downloader v20](https://greasyfork.org/zh-CN/scripts/5368-youtube-subtitle-downloader-v20)
 
 **第三步：下载字幕**
 
