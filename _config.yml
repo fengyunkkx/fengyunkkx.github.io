@@ -87,11 +87,11 @@ service-worker: true
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
         title: "少数派",
         href: "https://www.sspai.com/"
+      },{
+        title: "沨沄的 Notion Blog",
+        href: "https://www.notion.so/Blog-de5f395f032443b8af3287d02d419e55"
       },
       {
         title: "MyIndex",
@@ -104,11 +104,7 @@ friends: [
         {
         title: "我的 Windows 常用软件",
         href: "https://fengyunkkx.gitbooks.io/rapid-deployment-toolbox/"
-      },
-        {
-        title: "张文鹏个人博客",
-        href: "http://www.520zwp.com/"
-      },
+      },      
         {
         title: "Thoxvi Blog",
         href: "http://blog.thoxvi.com/"
