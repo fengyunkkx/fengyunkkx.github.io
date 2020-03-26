@@ -55,7 +55,7 @@ Dell Mobile Connect 这次实现了**在电脑上镜像显示手机屏幕**。�
 而这次 Dell Mobile Connect 另辟蹊径地采用了 iOS 中自带的「辅助触控」功能，实现了用 PC 的鼠标键盘直接对 iPhone 进行操作。这在以往的投屏方案中都是看不到的。
 
 <video id="my-video" class="video-js" controls="" preload="meta" style="width:100%" poster="" data-setup="{}">
-    <source src="../img/in-post/2020-03-26-Dell-Mobile-Connect/Dell-Mobile-Video.mp4" type="video/mp4">
+    <source src="http://ifoxfactory.com/img/in-post/2020-03-26-Dell-Mobile-Connect/Dell-Mobile-Video.mp4" type="video/mp4">
 </video>
 
 经过测试，在控制 iPhone 期间，用键盘快捷键都可以正常使用，且 Command 对应的都是 Windows 键盘上的 Ctrl 键，体验相当不错。
