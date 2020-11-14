@@ -16,6 +16,4 @@ For science and technology, the Internet has long been concerned about. My Steam
 
 I am a serious user of Evernote, notice time management and diary habits, pay attention to the details of life.
 
-I'm Shen Xinyu's boyfriend. 
-
 I'm also an interesting person.  :-)
