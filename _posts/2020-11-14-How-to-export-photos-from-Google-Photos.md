@@ -4,6 +4,7 @@ title:      "如何导出 Google Photos 的照片"
 date:       2020-11-14 22:12:04
 author:     "沨沄极客"
 header-mask: 0.3
+header-img: "img/in-post/2020-11-14-How-to-export-photos-from-Google-Photos/title-pic.png"
 catalog:    true
 tags: 
     - 技巧
