@@ -35,11 +35,11 @@ Google 系列的大部分产品都可以导出数据，而且数据非常完整�
 
 1. 进入 [Google 导出](https://takeout.google.com/settings/takeout) 的界面，需要登录 Google 账号。
 
-![03-导出第二步.png](https://i.loli.net/2020/11/14/x6Wul7pMwBQYr25.png)
+![02-导出第一步.png](https://i.loli.net/2020/11/14/QNRHAlZmJGkLbWC.png)
 
 2. 勾选「Google 相册」，点击底部的「下一步」。
 
-![02-导出第一步.png](https://i.loli.net/2020/11/14/QNRHAlZmJGkLbWC.png)
+![03-导出第二步.png](https://i.loli.net/2020/11/14/x6Wul7pMwBQYr25.png)
 
 3. 选择文件类型、频率和目标位置这里，提供方式选择「通过电子邮件发送下载链接」，频率选择「导出一次」。文件类型选 .tgz 的话能够选择单文件 50 GB，但考虑到下载速度可能并不理想，经常有可能中断连接导致前功尽弃。你可以选择 .zip 格式的 2 GB 大小单文件进行导出。
 
