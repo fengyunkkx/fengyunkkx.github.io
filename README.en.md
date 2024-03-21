@@ -8,8 +8,6 @@ Haunt [blog](http://iFoxFactory.com), [weibo](weibo.com/FoxGeeker), [Zhihu](http
 
 Good at Photoshop, illustrator, video production and editing. And still learning Python,
 
-Usually like to visit the V2EX and minority sites, and is also a contracting author of the [Sspai.com](sspai.com).
-
 I love to explore all kinds of software, familiar with iOS, Android, brush, Root, jailbreak and so on. Familiar with Windows, macOS.
 
 For science and technology, the Internet has long been concerned about. My Steam library hundreds of games and I support genuine.
