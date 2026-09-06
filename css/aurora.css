@@ -62,3 +62,7 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-b
 .timeline-heading{font-size:10px}.timeline-all{font-size:10px}.month-filter{font-size:10px}.month-filter input{width:112px}.filter-status{font-size:10px}
 }
 @media(max-width:1000px){.archive-filter{float:none;position:static;height:auto;width:auto;margin:18px 0;padding:0}.timeline-slider{display:none}}
+/* Final archive timeline: only real years are shown, newest at the top. */
+@media(min-width:1001px){
+ .timeline-rail{overflow:visible}.timeline-fill{top:0;bottom:auto;transition:top .16s,height .16s}.timeline-ticks{position:absolute;inset:0;left:0}.timeline-tick{position:absolute;left:27px;transform:translateY(-50%);border:0;background:none;padding:0;color:var(--muted);font:500 11px var(--mono);cursor:pointer}.timeline-tick:hover,.timeline-tick:focus{color:var(--ink)}.timeline-handle{bottom:auto;top:calc(var(--range-position) - 28px)}.filter-status{margin-top:4px;white-space:nowrap}.month-filter{display:none}
+}

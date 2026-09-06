@@ -15,11 +15,10 @@ description: 探索和折腾 / notes on technology, design & everyday systems
   <div class="timeline-heading">FILTER<br><strong>BY DATE</strong></div>
   <button type="button" class="timeline-all" id="timeline-all">ALL NOTES</button>
   <div class="timeline-slider is-vertical" aria-label="按收录月份筛选">
-    <div class="timeline-rail"><span class="timeline-fill"></span></div>
+    <div class="timeline-rail"><span class="timeline-fill"></span><div class="timeline-ticks" id="timeline-ticks"></div></div>
     <button class="timeline-handle" data-handle="from" type="button" role="slider" aria-label="起始月份" aria-orientation="vertical"><span class="timeline-handle-dot" aria-hidden="true"></span><span class="timeline-handle-label" aria-hidden="true"></span></button>
     <button class="timeline-handle" data-handle="to" type="button" role="slider" aria-label="结束月份" aria-orientation="vertical"><span class="timeline-handle-dot" aria-hidden="true"></span><span class="timeline-handle-label" aria-hidden="true"></span></button>
   </div>
-  <label class="month-filter">MONTH<input type="month" id="month-filter" aria-label="按月份精确筛选"></label>
   <output id="filter-status" class="filter-status">ALL NOTES</output>
 </aside>
 <section class="archive-grid">{% for post in posts %}<article class="post-card" data-year="{{ post.date | date: '%Y' }}" data-month="{{ post.date | date: '%Y-%m' }}"><a class="card-hit" href="{{ post.url | prepend: site.baseurl }}" aria-label="阅读 {{ post.title }}"></a><div class="card-top"><span>{{ post.date | date: '%Y.%m.%d' }}</span><span>{% if post.tags %}{{ post.tags | first }}{% else %}NOTE{% endif %}</span></div><h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2><p>{{ post.content | strip_html | truncate: 90 }}</p><a class="read-link" href="{{ post.url | prepend: site.baseurl }}">READ NOTE</a></article>{% endfor %}</section>
