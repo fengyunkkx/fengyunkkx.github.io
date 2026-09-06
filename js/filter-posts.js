@@ -12,7 +12,7 @@
   function render(update=true){
     if(from>to)[from,to]=[to,from]; cards.forEach(c=>{const i=months.indexOf(c.dataset.month);c.hidden=i<from||i>to});
     const start=months[from],end=months[to], span=max||1; handles.from.style.setProperty('--range-position',(from/span*100)+'%');handles.to.style.setProperty('--range-position',(to/span*100)+'%');fill.style.top=(from/span*100)+'%';fill.style.height=((to-from)/span*100)+'%';
-    [handles.from,handles.to].forEach((h,i)=>{const n=i?to:from;h.setAttribute('aria-valuemin','0');h.setAttribute('aria-valuemax',String(max));h.setAttribute('aria-valuenow',String(n));h.setAttribute('aria-valuetext',text(months[n]));h.querySelector('.timeline-handle-label').textContent=text(months[n])});
+    [handles.from,handles.to].forEach((h,i)=>{const n=i?to:from;h.style.top=(7+(n/span)*(slider.clientHeight-56))+'px';h.setAttribute('aria-valuemin','0');h.setAttribute('aria-valuemax',String(max));h.setAttribute('aria-valuenow',String(n));h.setAttribute('aria-valuetext',text(months[n]));h.querySelector('.timeline-handle-label').textContent=text(months[n])});
     status.textContent=from===0&&to===max?'ALL NOTES':(start===end?text(start):text(start)+'—'+text(end));
     if(!update)return; const u=new URL(location.href);['from','to','year','month'].forEach(k=>u.searchParams.delete(k));if(from!==0||to!==max){u.searchParams.set('from',start);u.searchParams.set('to',end)}u.hash='notes';history.replaceState(null,'',u);
   }
