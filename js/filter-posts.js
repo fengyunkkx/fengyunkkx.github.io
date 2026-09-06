@@ -3,7 +3,7 @@
   const q=new URLSearchParams(location.search);
   // Build the axis from real post months only, newest first. Empty periods never enter the scale.
   const months=[...new Set(cards.map(c=>c.dataset.month))].sort().reverse();
-  const max=months.length-1, slider=document.querySelector('.timeline-slider'), rail=document.querySelector('.timeline-rail'), fill=document.querySelector('.timeline-fill'), ticks=document.getElementById('timeline-ticks'), status=document.getElementById('filter-status');
+  const max=Math.max(months.length-1,1), slider=document.querySelector('.timeline-slider'), rail=document.querySelector('.timeline-rail'), fill=document.querySelector('.timeline-fill'), ticks=document.getElementById('timeline-ticks'), status=document.getElementById('filter-status');
   const handles={from:document.querySelector('[data-handle="from"]'),to:document.querySelector('[data-handle="to"]')}; let from=0,to=max,dragging=null;
   const text=m=>m ? m.replace('-','.') : '';
   const index=value=>{const i=months.indexOf(value);return i<0?null:i};
@@ -18,6 +18,6 @@
   }
   function pointer(e){const r=rail.getBoundingClientRect(),next=Math.round(Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))*max);if(dragging==='from')from=Math.min(next,to);else to=Math.max(next,from);render()}
   [handles.from,handles.to].forEach(h=>{h.addEventListener('pointerdown',e=>{dragging=h.dataset.handle;h.setPointerCapture(e.pointerId);h.classList.add('is-dragging')});h.addEventListener('pointermove',e=>{if(dragging)pointer(e)});h.addEventListener('pointerup',()=>{dragging=null;h.classList.remove('is-dragging')});h.addEventListener('keydown',e=>{const d=e.key==='ArrowUp'?-1:e.key==='ArrowDown'?1:0;if(!d)return;e.preventDefault();if(h.dataset.handle==='from')from=Math.max(0,Math.min(to,from+d));else to=Math.min(max,Math.max(from,to+d));render()})});
-  rail.addEventListener('pointerdown',e=>{if(e.target===rail||e.target===fill)pointer(e)});
+  rail.addEventListener('pointerdown',e=>{if(e.target!==rail&&e.target!==fill)return;const r=rail.getBoundingClientRect(),next=Math.round(Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))*max);dragging=Math.abs(next-from)<=Math.abs(next-to)?'from':'to';pointer(e);dragging=null});
   document.getElementById('timeline-all').addEventListener('click',()=>{from=0;to=max;render()}); render(false);
 })();
