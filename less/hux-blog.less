@@ -57,12 +57,28 @@ article{
 	overflow-x : hidden;
 }
 blockquote {
-	color: gray;
-	font-style: italic;
+	position: relative;
+	margin: 24px 0;
+	padding: 16px 20px 16px 24px;
+	border-left: 4px solid @brand-primary;
+	border-radius: 0 8px 8px 0;
+	background: lighten(@brand-primary, 48%);
+	color: @gray;
 	font-size: 0.95em;
-	margin: 20px 0 20px;
-	p{
+	font-style: normal;
+	line-height: 1.8;
+	box-shadow: inset 0 0 0 1px fade(@brand-primary, 8%);
+
+	p {
 		margin: 0;
+	}
+
+	& > :first-child {
+		margin-top: 0;
+	}
+
+	& > :last-child {
+		margin-bottom: 0;
 	}
 }
 

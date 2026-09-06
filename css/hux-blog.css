@@ -346,13 +346,26 @@ article {
   overflow-x: hidden;
 }
 blockquote {
+  position: relative;
+  margin: 24px 0;
+  padding: 16px 20px 16px 24px;
+  border-left: 4px solid #0085A1;
+  border-radius: 0 8px 8px 0;
+  background: #f0fafc;
   color: gray;
-  font-style: italic;
   font-size: 0.95em;
-  margin: 20px 0 20px;
+  font-style: normal;
+  line-height: 1.8;
+  box-shadow: inset 0 0 0 1px rgba(0, 133, 161, 0.08);
 }
 blockquote p {
   margin: 0;
+}
+blockquote > :first-child {
+  margin-top: 0;
+}
+blockquote > :last-child {
+  margin-bottom: 0;
 }
 small.img-hint {
   display: block;

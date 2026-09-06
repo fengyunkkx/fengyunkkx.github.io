@@ -1,7 +1,5 @@
 # Self introduction
 
-I am a student in college, an ordinary person.
-
 I love technology and all kinds of new things.
 
 Haunt [blog](http://iFoxFactory.com), [weibo](weibo.com/FoxGeeker), [Zhihu](https://www.zhihu.com/people/fengyunkkx/pins/posts), [Twitter](https://twitter.com/fengyunkkx/), [Github](http://github.com/fengyunkkx/) and other sites.

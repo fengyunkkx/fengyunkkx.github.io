@@ -1,0 +1,1 @@
+(function(){const q=new URLSearchParams(location.search),from=Number(q.get('from')||0),to=Number(q.get('to')||9999);if(!from&&!q.has('to'))return;document.querySelectorAll('.post-card[data-year]').forEach(c=>{const y=Number(c.dataset.year);c.hidden=!(y>=from&&y<=to)});})();
