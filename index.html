@@ -1,9 +1,8 @@
 ---
 layout: page
-title: 沨沄的博客
 description: 探索和折腾 / notes on technology, design & everyday systems
 ---
-{% assign posts = paginator.posts | default: site.posts %}
+{% assign posts = site.posts %}
 <section class="hero-panel" id="archive">
   <div class="hero-copy">
     <h1>沨沄的博客</h1>
@@ -12,7 +11,7 @@ description: 探索和折腾 / notes on technology, design & everyday systems
   <div class="orbital orbital-three" aria-label="Three.js generative particle field"><canvas id="particle-field"></canvas><noscript><span class="orb-core">FX<br><small>FIELD<br>NOTES</small></span></noscript></div>
 </section>
 <div class="section-head" id="notes"><span>01 / ARCHIVE</span><span>{{ site.posts.size }} SIGNALS</span></div>
-<section class="archive-grid">{% for post in posts %}<article class="post-card" data-year="{{ post.date | date: '%Y' }}"><a class="card-hit" href="{{ post.url | prepend: site.baseurl }}" aria-label="阅读 {{ post.title }}"></a><div class="card-top"><span>{{ post.date | date: '%Y.%m.%d' }}</span><span>{% if post.tags %}{{ post.tags | first }}{% else %}NOTE{% endif %}</span></div><h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2><p>{{ post.content | strip_html | truncate: 90 }}</p><a class="read-link" href="{{ post.url | prepend: site.baseurl }}">READ NOTE</a></article>{% endfor %}</section>
-{% if paginator.total_pages > 1 %}<nav class="pagination">{% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">← NEWER</a>{% endif %}<span>PAGE {{ paginator.page }} / {{ paginator.total_pages }}</span>{% if paginator.next_page %}<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">OLDER →</a>{% endif %}</nav>{% endif %}
+<aside class="timeline-filter archive-filter" aria-label="按年月筛选"><span class="timeline-label">FILTER<br>BY DATE</span><a href="{{ site.baseurl }}/#notes">ALL</a><a href="{{ site.baseurl }}/?from=2020#notes">2020—NOW</a><a href="{{ site.baseurl }}/?from=2017&to=2019#notes">2017—19</a><label class="month-filter">MONTH<input type="month" id="month-filter" aria-label="按月份筛选"></label><span class="timeline-track"></span></aside>
+<section class="archive-grid">{% for post in posts %}<article class="post-card" data-year="{{ post.date | date: '%Y' }}" data-month="{{ post.date | date: '%Y-%m' }}"><a class="card-hit" href="{{ post.url | prepend: site.baseurl }}" aria-label="阅读 {{ post.title }}"></a><div class="card-top"><span>{{ post.date | date: '%Y.%m.%d' }}</span><span>{% if post.tags %}{{ post.tags | first }}{% else %}NOTE{% endif %}</span></div><h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2><p>{{ post.content | strip_html | truncate: 90 }}</p><a class="read-link" href="{{ post.url | prepend: site.baseurl }}">READ NOTE</a></article>{% endfor %}</section>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.min.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/"}}</script><script type="module" src="{{ '/js/particle-field.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/js/filter-posts.js' | prepend: site.baseurl }}"></script>
